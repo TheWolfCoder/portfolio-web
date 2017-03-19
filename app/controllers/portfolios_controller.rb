@@ -29,6 +29,8 @@ def create
 end
 
 def edit
+  
+   @portfolio_item.technologies.build 
 end
 
 def update
