@@ -8,4 +8,14 @@ module ApplicationHelper
           (link_to "Login", new_user_session_path)
         end
   end
+
+#you must add a '?q=' after the URL, otherwise this won't work
+  def source_helper(layout_name)
+    if session[:source]
+      greeting = "Thanks for visiting me #{session[:source]} and you are on the #{layout_name} layout"
+      content_tag(:p, greeting, class: "source-greeting")
+    end  
+  end
+ 
 end
+
