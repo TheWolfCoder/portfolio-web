@@ -50,3 +50,4 @@ end
 
 gem 'friendly_id', '~> 5.1.0'
 gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'ironic_ruby_view_tool', git: 'https://github.com/TheWolfCoder/ironic_ruby_view_tool'
