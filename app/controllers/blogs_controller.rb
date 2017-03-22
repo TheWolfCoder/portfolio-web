@@ -7,7 +7,6 @@ class BlogsController < ApplicationController
   def index
     @blogs = Blog.special_blogs
   #  binding.pry
-    @blogs = Blog.feature_blogs
     @page_title = "#{current_user.first_name}'s Portfolio Blog"
   end
 
