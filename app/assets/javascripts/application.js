@@ -11,7 +11,9 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery-ui
 //= require jquery_ujs
+//= require html.sortable
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require bootstrap
