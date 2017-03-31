@@ -14,3 +14,4 @@
 
 # I don't want to show my secrets
 /config/secrets.yml
+.env
