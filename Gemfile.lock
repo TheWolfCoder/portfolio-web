@@ -257,7 +257,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  actioncable
+  actioncable (~> 5.0.0.beta3)
   bootstrap (~> 4.0.0.alpha6)
   byebug
   carrierwave (~> 1.0)
