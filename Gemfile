@@ -20,7 +20,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'devise', '~> 4.2', '>= 4.2.1'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -37,6 +37,7 @@ group :development do
 end
 
 gem 'friendly_id', '~> 5.1.0'
+gem 'devise', '~> 4.2', '>= 4.2.1'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'ironic_ruby_view_tool', '~> 0.1.0'
 gem 'petergate', '~> 1.7'
@@ -50,3 +51,5 @@ gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 gem 'cocoon', '~> 1.2', '>= 1.2.9'
 gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 5.16'
+gem 'redis', '~> 3.3', '>= 3.3.1'
+gem 'actioncable'
