@@ -1,4 +1,5 @@
 class TopicsController < ApplicationController
+before_action :set_sidebar_topics
 layout 'blog'
 
 def show
@@ -13,6 +14,12 @@ end
 
 def index
   @topics = Topic.all
+end
+
+private
+
+def set_sidebar_topics
+  @side_bar_topics = Topic.with_blogs
 end
 
 
