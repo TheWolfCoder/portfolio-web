@@ -18,7 +18,6 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.json
   def show
-    @blog = Blog.includes(:comments).friendly.find(params[:id])
     @comment = Comment.new
     @page_title = @blog.title
     @seo_keywords = @blog.body
@@ -69,7 +68,7 @@ class BlogsController < ApplicationController
   end
 
   def toggle_status
-   @blog = Blog.includes(:comments).friendly.find(params[:id])
+
       if @blog.draft?
       @blog.published!
       else
@@ -81,11 +80,11 @@ class BlogsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_blog
-
+   @blog = Blog.includes(:comments).friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:title, :body)
+      params.require(:blog).permit(:title, :body, :topic_id)
     end
 end
