@@ -12,7 +12,6 @@ class BlogsController < ApplicationController
     else
     @blogs = Blog.published.recent.page(params[:page]).per(5)
     end
-  #  binding.pry
     @page_title = "#{current_user.first_name}'s Portfolio Blog"
   end
 
