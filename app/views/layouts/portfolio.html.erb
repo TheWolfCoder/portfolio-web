@@ -7,6 +7,8 @@
 
 <META name="keywords" content="<%= @seo_keywords%>" />
 
+<%= favicon_link_tag 'favicons/favicon' %>
+
   <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -21,7 +23,5 @@
    <%= render 'shared/portfolio_footer' %>
 
   <%= alerts %>
-  <%= source_helper("application") %>
-  <%= copyright_generator %>
 </body>
 </html>

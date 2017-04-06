@@ -6,10 +6,13 @@
   <title><%= @page_title %></title>
 
 <META name="keywords" content="<%= @seo_keywords%>" />
+
+<%= favicon_link_tag 'favicons/favicon' %>
   
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/css?family=Pavanam|Roboto" rel="stylesheet">
 </head>
 <body>
   <div class="site-wrapper">
@@ -33,7 +36,6 @@
         
         <%= alerts %>
         
-        <%= source_helper("application") %>
         </div>
       </div>
     </div>
